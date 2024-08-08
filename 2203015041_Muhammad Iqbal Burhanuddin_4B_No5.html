@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            background-color: #eefc9c; 
+        }
+
+        h1 {
+            text-align: center;
+            color: #f7b733; 
+        }
+
+        .container {
+            width: 300px;
+            padding: 20px;
+            border: none; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(247, 183, 51, 0.3); 
+            margin: 0 auto; /* Tengahkan kontainer */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f7b733; 
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #f7b733; 
+            border-radius: 4px;
+            color: #333; 
+        }
+
+        input[type="submit"] {
+            background-color: #f7b733; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Login</h1>
+            <label for="username">Nama Pengguna:</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan nama pengguna">
+            <br>
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan kata sandi">
+            <br><br>
+            <input type="submit" value="Masuk">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pemesanan Makanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            background-color: #e14f91; 
+        }
+
+        h1 {
+            text-align: center;
+            color: #c7437b; 
+        }
+
+        .container {
+            width: 500px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f6b8e4; 
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+            margin: 0 auto; /* Tengahkan kontainer */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #c7437b; 
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 8px; 
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #c7437b; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #9e2a64; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Pemesanan Makanan</h1>
+            <label for="item_makanan">Pilih Makanan:</label>
+            <select id="item_makanan" name="item_makanan">
+                <option value="">Pilih...</option>
+                <option value="nasi_goreng">Nasi Goreng</option>
+                <option value="mie_goreng">Mie Goreng</option>
+                <option value="sate_ayam">Sate Ayam</option>
+                <option value="ayam_bakar">Ayam Bakar</option>
+            </select>
+            <br>
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" value="1">
+            <br>
+            <label for="alamat_pengiriman">Alamat Pengiriman:</label>
+            <textarea id="alamat_pengiriman" name="alamat_pengiriman" rows="4"></textarea>
+            <br><br>
+            <input type="submit" value="Pesan Sekarang">
+        </form>
+    </div>
+</body>
+</html>

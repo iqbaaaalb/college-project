@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Survei</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            margin: 20px;
+            color: #1c0b1a;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 700px;
+            border: 1px solid #c966b7;
+            padding: 20px;
+            background-color: #d4aee3;
+            margin: 0 auto; /* Tengahkan kontainer */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e3b0db;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+            color: #93448b;
+        }
+
+        input[type="submit"] {
+            background-color: #6f1865;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s ease-in-out;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #93448b;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Survei</h1>
+        <p>Bagaimana pendapat Anda tentang website ini?</p>
+        <form action="prosesSurvei.php" method="post">
+            <input type="radio" id="sangat_baik" name="pendapat" value="sangat_baik" checked>
+            <label for="sangat_baik">Sangat Baik</label>
+            <br>
+            <input type="radio" id="baik" name="pendapat" value="baik">
+            <label for="baik">Baik</label>
+            <br>
+            <input type="radio" id="cukup" name="pendapat" value="cukup">
+            <label for="cukup">Cukup</label>
+            <br>
+            <input type="radio" id="buruk" name="pendapat" value="buruk">
+            <label for="buruk">Buruk</label>
+            <br><br>
+            <p>Apa yang Anda sukai dari website ini?</p>
+            <input type="checkbox" id="desain" name="suka[]" value="desain">
+            <label for="desain">Desain</label>
+            <br>
+            <input type="checkbox" id="konten" name="suka[]" value="konten">
+            <label for="konten">Konten</label>
+            <br>
+            <input type="checkbox" id="kemudahan_penggunaan" name="suka[]" value="kemudahan_penggunaan">
+            <label for="kemudahan_penggunaan">Kemudahan Penggunaan</label>
+            <br><br>
+            <p>Apa yang Anda tidak sukai dari website ini?</p>
+            <textarea id="tidak_suka" name="tidak_suka" rows="5"></textarea>
+            <br><br>
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+</body>
+</html>
